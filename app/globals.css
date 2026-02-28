@@ -1,0 +1,169 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+/* CABEÇALHO EMPRESA */
+.empresa {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+
+.empresa h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.empresa p {
+  font-size: 14px;
+}
+
+/* NUMERO ORÇAMENTO */
+.numero {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+.numero input {
+  width: 150px;
+}
+
+/* INPUTS GERAIS */
+input,
+textarea,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* TITULOS */
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* ITENS */
+.item-box {
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-box input[type="number"] {
+  max-width: 150px;
+}
+
+.total-item {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* BOTÃO ADICIONAR */
+button {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* TOTAL GERAL */
+.total-geral {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 25px;
+  border-top: 2px solid black;
+  padding-top: 15px;
+}
+
+/* PAGAMENTO */
+.pagamento {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+
+.pagamento select {
+  max-width: 300px;
+}
+
+.parcelado {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+/* BOTÃO PDF */
+.btn-pdf {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 14px;
+}
+
+/* IMPRESSÃO (caso use print futuramente) */
+@media print {
+  body {
+    background: white;
+  }
+
+  button {
+    display: none;
+  }
+
+  .container {
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+.cliente {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
